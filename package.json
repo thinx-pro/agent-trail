@@ -1,0 +1,33 @@
+{
+  "name": "agent-trail",
+  "version": "0.1.0",
+  "description": "A paper trail for everything your AI agent sends out: logs every POST, form submit, push, publish and message from Claude Code / Codex, and asks before it writes to government, police, bank or health sites.",
+  "type": "module",
+  "bin": {
+    "agent-trail": "bin/agent-trail.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "examples",
+    "skills"
+  ],
+  "scripts": {
+    "test": "node --test test/classify.test.js test/hook.test.js",
+    "demo": "node bin/agent-trail.js scan --claude-dir demo/transcripts --codex-dir demo/codex --days all"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "codex",
+    "ai-agents",
+    "hooks",
+    "audit-log",
+    "browser-agent",
+    "agent-safety",
+    "mcp"
+  ],
+  "license": "MIT"
+}

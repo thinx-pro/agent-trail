@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "law-enforcement": "deny",
+    "elections": "deny",
+    "courts": "ask",
+    "government": "ask",
+    "financial": "ask",
+    "health": "ask",
+    "external": "log",
+    "internal": "ignore"
+  },
+  "hosts": {
+    "api.stripe.com": "log",
+    "hooks.slack.com": "log"
+  },
+  "categories": {
+    "mycompany.internal.example": "internal"
+  },
+  "unattended": "auto",
+  "logReads": false
+}

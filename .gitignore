@@ -1,0 +1,5 @@
+node_modules/
+.agent-trail/
+*.log
+.DS_Store
+assets/*.html
