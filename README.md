@@ -2,6 +2,9 @@
 
 **A paper trail for everything your AI agent sends out.** It logs every POST, form submit, push, publish and message your Claude Code or Codex agent makes, and asks before the agent writes to government, police, election, court, bank or health sites.
 
+<!-- agent-preflight -->
+> **Also a Claude Code skill.** `agent-trail` is part of [agent-preflight](https://github.com/thinx-pro/agent-preflight), 16 offline checks for coding agents: `/plugin marketplace add thinx-pro/agent-preflight` then `/plugin install agent-trail@agent-preflight`, and ask Claude in plain words.
+
 ![node >= 18](https://img.shields.io/badge/node-%3E%3D18-3c873a) ![zero dependencies](https://img.shields.io/badge/dependencies-0-blue) ![license MIT](https://img.shields.io/badge/license-MIT-green) ![tests 17 passing](https://img.shields.io/badge/tests-17%20passing-brightgreen)
 
 ![agent-trail scan output: seven sensitive submissions flagged, then a live tip submission denied by the hook](assets/demo.png)
