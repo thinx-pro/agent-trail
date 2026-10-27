@@ -120,15 +120,3 @@ node scripts/make-demo.js    # regenerate them
 ## License
 
 MIT
-
----
-
-### 中文说明
-
-**agent-trail：给 AI Agent 对外发出的每一个动作留痕。** 它会记录 Claude Code / Codex 发出的 POST、表单提交、git push、发包和邮件等动作。遇到政府、警方、选举、法院、银行、医疗类网站时，它会先问你；如果是无人值守的会话（bypass 模式），它会直接拦截，并放进第二天早上的审查单。
-
-- `npx -y github:thinx-pro/agent-trail scan`：零配置，回溯扫描本机已有的会话记录，看看 Agent 之前都往外发过什么。只读，不联网。
-- `agent-trail init --write`：装上 Claude Code Hook，之后每次对外写操作都会实时记录。
-- `agent-trail review --since 24h`：每天早上看一页审查单。
-
-只记录字段名、大小和哈希，**不保存提交的内容**。它是启发式识别，不能替代网络防火墙或沙箱。
